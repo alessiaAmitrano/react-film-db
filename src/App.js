@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Route, Switch, useHistory } from "react-router-dom";
 import Searchbar from "./components/SearchBar";
 import Results from "./pages/Results";
+import Layout from "./ui/Layout";
 
 const CONFIG_URL =
   "https://api.themoviedb.org/3/configuration?api_key=15dd194f094bd6f3b0bc7ca34b69a718";
@@ -37,7 +38,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <Layout>
       <Switch>
         <Route path={ROUTES.DEFAULT} exact>
           <Searchbar searchMovies={fetchMovies} />
@@ -46,7 +47,7 @@ function App() {
           <Results queryText={queryString} filmItems={films} />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 }
 
