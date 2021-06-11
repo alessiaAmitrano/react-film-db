@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import styles from "./Film.module.css";
+import Badge from "../ui/Badge";
 
 const HTTP_IMG_URL = "https://image.tmdb.org/t/p/w500";
 
@@ -13,11 +13,13 @@ function Film(props) {
         className={styles.filmPoster}
         style={posterUrl}
         alt={props.filmItem.original_title}
-      />
-      <h3>
+      >
+        <Badge vote={props.filmItem.vote_average}></Badge>
+      </div>
+      <h4>
         {props.filmItem.original_title} (
         {new Date(props.filmItem.release_date).getFullYear()})
-      </h3>
+      </h4>
     </div>
   );
 }

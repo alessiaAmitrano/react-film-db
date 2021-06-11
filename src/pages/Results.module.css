@@ -1,6 +1,18 @@
+.results {
+  padding-top: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.results h2 {
+  color: #fcdab7;
+  margin-left: 50px;
+}
+
 .filmListWrapper {
   display: flex;
-      display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 }

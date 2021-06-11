@@ -5,6 +5,7 @@
   left: 0;
   width: 100vw;
   height: 65px;
+  z-index: 100;
 }
 
 .header h1 {
