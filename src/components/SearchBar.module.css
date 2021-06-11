@@ -1,0 +1,43 @@
+.searchbarContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchForm {
+  position: relative;
+  width: 65vw;
+  height: 56px;
+}
+
+.searchForm input {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 35px;
+  border-color: transparent;
+  color: #5F6368;
+}
+
+.searchForm input:focus-visible {
+  outline: none;
+}
+
+.submitBtn {
+  position: absolute;
+  right: 0px;
+  top: 11px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.submitBtn svg {
+  width: 40px;
+  height: 40px;
+  fill: #5F6368;
+}

@@ -1,0 +1,18 @@
+.filmItem {
+  background:transparent;
+  width: 200px;
+  height: 350px;
+  margin: 30px 0 0;
+}
+
+.filmItem  h3 {
+  text-align: center;
+  color: white;
+}
+
+.filmPoster {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
